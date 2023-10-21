@@ -1,12 +1,12 @@
 import "./App.css";
-// import NavbarComponent from "./components/Navbar";
-import Hamburger from "./components/Hamburger";
+import NavbarComponent from "./components/Navbar";
+// import Hamburger from "./components/Hamburger";
 
 function App() {
   return (
-    <div className="homepage-background-remove">
+    <div className="bg-custom-primary-blue-dark">
       {/* <NavbarComponent /> */}
-      <Hamburger />
+      <NavbarComponent />
     </div>
   );
 }

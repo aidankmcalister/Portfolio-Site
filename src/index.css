@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --custom-text-dark: #ffffff;
+  --custom-primary-blue-dark: #0d121c;
+  --custom-secondary-blue-dark: #192234;
+  --custom-primary-gold-dark: #947947;
+  --custom-secondary-gold-dark: #b49864;
+  --custom-text-light: #000000;
+  --custom-primary-blue-light: #e3e8f2;
+  --custom-secondary-blue-light: #b89d6b;
+  --custom-primary-gold-light: #cbd4e6;
+  --custom-secondary-gold-light: #9b7f4b;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

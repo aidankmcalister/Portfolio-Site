@@ -1,5 +1,6 @@
-// import React, { useState } from "react";
-// import Hamburger from "./Hamburger";
+import Hamburger from "./Hamburger";
 
-// const NavbarComponent = () => {};
-// export default NavbarComponent;
+const NavbarComponent = () => {
+  return <Hamburger />;
+};
+export default NavbarComponent;
