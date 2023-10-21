@@ -2,7 +2,7 @@ import React from "react";
 
 const Hamburger = () => {
   return (
-    <div className="color-green-akm">
+    <div>
       <label className="hamburger-menu">
         <input type="checkbox" />
       </label>
