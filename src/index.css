@@ -15,12 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.homepage-background {
-  background: url(./app/assets/imgs/pawel-czerwinski-GevBd-PLjG4-unsplash.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
