@@ -16,7 +16,7 @@ body {
   --hamburger-gap: 6px;
   --foreground: var(--color1);
   --background: var(--color2);
-  --hamburger-margin: 8px;
+  --hamburger-margin: 1rem;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
@@ -88,13 +88,16 @@ body {
 
 .sidebar {
   transition: translate var(--animation-timing);
-  translate: -100%;
+  position: absolute;
+  translate: -100% 30%;
   padding: 0.5rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
   background-color: var(--foreground);
   color: var(--background);
   max-width: 10rem;
-  min-height: 100vh;
+  min-width: 7rem;
+  min-height: 30vh;
+  border-radius: 1.5rem;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {

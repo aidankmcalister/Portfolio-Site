@@ -1,5 +1,15 @@
 import React from "react";
 
+export const NavItem = ({ to, children }) => {
+  return (
+    <li>
+      <a href={to} className="cursor-pointer">
+        {children}
+      </a>
+    </li>
+  );
+};
+
 const Hamburger = () => {
   return (
     <div>
@@ -8,10 +18,12 @@ const Hamburger = () => {
       </label>
       <aside className="sidebar">
         <nav>
-          <div>Home</div>
-          <div>Portfolio</div>
-          <div>About</div>
-          <div>Contact</div>
+          <ul className="cursor-pointer text-2xl">
+            <NavItem to="#home">Home</NavItem>
+            <NavItem to="#portfolio">Portfolio</NavItem>
+            <NavItem to="#about">About</NavItem>
+            <NavItem to="#contact">Contact</NavItem>
+          </ul>
         </nav>
       </aside>
     </div>
