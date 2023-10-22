@@ -1,15 +1,19 @@
-/* #region Navbar */
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+:root {
+  --custom-text-dark: #ffffff;
+  --custom-primary-blue-dark: #0d121c;
+  --custom-secondary-blue-dark: #192234;
+  --custom-primary-gold-dark: #947947;
+  --custom-secondary-gold-dark: #b49864;
+  --custom-text-light: #000000;
+  --custom-primary-blue-light: #e3e8f2;
+  --custom-secondary-blue-light: #b89d6b;
+  --custom-primary-gold-light: #cbd4e6;
+  --custom-secondary-gold-light: #9b7f4b;
+  --custom-light-blue-shadow: #303848;
 }
 
-.animate-bounce {
-  animation: bounce 0.6s ease;
+/* #region Navbar */
+.svg-fill:hover > svg {
+  fill: var(--custom-secondary-gold-dark);
 }
 /* #endregion */
