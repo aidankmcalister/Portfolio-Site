@@ -11,19 +11,18 @@ body {
 :root {
   --color1: var(--custom-primary-gold-dark);
   --color2: var(--custom-text-dark);
-  --bar-width: 60px;
-  --bar-height: 8px;
-  --hamburger-gap: 6px;
+  --bar-width: 2rem;
+  --bar-height: 0.3rem;
+  --hamburger-gap: 0.4rem;
   --foreground: var(--color1);
   --background: var(--color2);
-  --hamburger-margin: 1rem;
-  --animation-timing: 200ms ease-in-out;
+  --hamburger-margin: 1.188rem;
+  --animation-timing: 150ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-
   display: flex;
   flex-direction: column;
   gap: var(--hamburger-gap);
@@ -89,14 +88,14 @@ body {
 .sidebar {
   transition: translate var(--animation-timing);
   position: absolute;
-  translate: -100% 30%;
+  translate: -120%;
+  margin: 0.3rem;
   padding: 0.5rem 1rem;
-  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 0rem);
   background-color: var(--foreground);
   color: var(--background);
-  max-width: 10rem;
-  min-width: 7rem;
-  min-height: 30vh;
+  width: 13rem;
+  min-height: 35vh;
   border-radius: 1.5rem;
 }
 

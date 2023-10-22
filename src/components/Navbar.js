@@ -1,11 +1,18 @@
 import Hamburger from "./Hamburger";
+import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
+import { ReactComponent as UserIcon } from "../app/assets/imgs/user.svg";
+import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
+import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
 
 export const NavItem = ({ to, children }) => {
+  const linkClasses =
+    "flex cursor-pointer px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-custom-primary-gold-dark";
+  const hoverClasses =
+    "hover:text-custom-secondary-gold-dark transition-all hover:animate-bounce";
+
   return (
-    <li>
-      <a
-        href={to}
-        className="cursor-pointer px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-custom-primary-gold-dark hover:text-custom-secondary-gold-dark transition-all">
+    <li className="flex items-center">
+      <a href={to} className={`${linkClasses} ${hoverClasses}`}>
         {children}
       </a>
     </li>
@@ -37,10 +44,22 @@ const NavbarComponent = () => {
           </div>
           <div className="order-1 md:order-2">
             <ul className="hidden md:flex space-x-4 cursor-pointer">
-              <NavItem to="#home">Home</NavItem>
-              <NavItem to="#portfolio">Portfolio</NavItem>
-              <NavItem to="#about">About</NavItem>
-              <NavItem to="#contact">Contact</NavItem>
+              <NavItem to="#home">
+                <HomeIcon className="mr-2" width={"1.4rem"} />
+                Home
+              </NavItem>
+              <NavItem to="#portfolio">
+                <FolderIcon className="mr-2" width={"1.4rem"} />
+                Portfolio
+              </NavItem>
+              <NavItem to="#about">
+                <UserIcon className="mr-2" width={"1.4rem"} />
+                About
+              </NavItem>
+              <NavItem to="#contact">
+                <SendIcon className="mr-2" width={"1.4rem"} />
+                Contact
+              </NavItem>
             </ul>
           </div>
         </div>
