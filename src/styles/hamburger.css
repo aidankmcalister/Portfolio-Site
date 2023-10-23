@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-  --color1: var(--custom-primary-gold-dark);
+  --color1: #121824;
   --color2: var(--custom-text-dark);
   --bar-width: 2rem;
   --bar-height: 0.3rem;
@@ -36,7 +36,6 @@ body {
 
 .hamburger-menu:has(input:checked) {
   --foreground: var(--color2);
-  --background: var(--color1);
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
@@ -52,7 +51,7 @@ body {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--foreground);
+  background-color: var(--background);
   border-radius: 1rem;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),
