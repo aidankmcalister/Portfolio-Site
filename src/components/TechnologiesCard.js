@@ -23,9 +23,7 @@ const TechnologiesCard = () => {
   return (
     <div className="md:h-52 h-80 bg-custom-secondary-blue-dark m-4 rounded-lg p-3 flex flex-col text-white max-w-lg animate-fade-up shadow-lg shadow-custom-light-blue-shadow opacity-80 font-rubik">
       <div className="">
-        <h1 className="text-2xl" style={{ margin: 0 }}>
-          Skills
-        </h1>
+        <h1 className="text-2xl">Skills</h1>
         <hr className="w-full my-2 text-lg mt-1" />
         <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
           {renderedTechnologies.map((technology) => (
