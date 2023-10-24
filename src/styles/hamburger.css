@@ -30,7 +30,7 @@ body {
   position: absolute;
   top: var(--hamburger-margin);
   left: var(--hamburger-margin);
-  z-index: 2;
+  z-index: 6;
   cursor: pointer;
 }
 
@@ -96,6 +96,7 @@ body {
   width: 13rem;
   min-height: 35vh;
   border-radius: 1.5rem;
+  z-index: 5;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {

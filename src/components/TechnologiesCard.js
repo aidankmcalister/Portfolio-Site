@@ -1,19 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { TECHNOLOGIES } from "../app/shared/TECHNOLOGIES";
 
 const TechnologiesCard = () => {
+  console.log(TECHNOLOGIES[0]);
+
+  const [renderedTechnologies, setRenderedTechnologies] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (currentIndex < TECHNOLOGIES.length) {
+        setRenderedTechnologies((prevTechnologies) => [
+          ...prevTechnologies,
+          TECHNOLOGIES[currentIndex],
+        ]);
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
+
   return (
-    <div className="bg-custom-secondary-blue-dark m-4 rounded-lg p-4 flex flex-col justify-center">
-      <h1 className="text-2xl">Technologies Known</h1>
-      <ul className="grid grid-cols-2 gap-2">
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bootstrap</li>
-        <li>Tailwind</li>
-        <li>React</li>
-        <li>MySQL</li>
-      </ul>
+    <div className="md:h-52 h-80 bg-custom-secondary-blue-dark m-4 rounded-lg p-3 flex flex-col text-white max-w-lg animate-fade-up shadow-lg shadow-custom-light-blue-shadow opacity-80 font-rubik">
+      <div className="">
+        <h1 className="text-2xl" style={{ margin: 0 }}>
+          Skills
+        </h1>
+        <hr className="w-full my-2 text-lg mt-1" />
+        <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
+          {renderedTechnologies.map((technology) => (
+            <li
+              key={technology.id}
+              className={`animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
+              style={{ backgroundColor: "#303848" }}>
+              <img
+                src={technology.img}
+                alt={technology.name}
+                width={"25rem"}
+                className="mr-3"
+              />
+              {technology.name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
