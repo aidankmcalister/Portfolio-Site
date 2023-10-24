@@ -1,6 +1,6 @@
 import "./App.css";
 import NavbarComponent from "./components/Navbar";
-import Landing from "./components/Landing";
+import Landing from "./pages/Landing";
 
 function App() {
   return (

@@ -46,7 +46,7 @@ const NavbarComponent = () => {
       <header className="bg-custom-primary-blue-dark text-white p-2">
         <div className="flex w-full justify-between items-center">
           <div className="order-2 md:order-1 ml-auto md:ml-0">
-            <Logo width={"12rem"} height={"3rem"} style={{ lineHeight: 0 }} />
+            {/* <Logo width={"12rem"} height={"3rem"} style={{ lineHeight: 0 }} /> */}
           </div>
           <div className="order-1 md:order-2">
             <ul className="hidden md:flex space-x-4 cursor-pointer">

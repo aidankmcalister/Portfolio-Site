@@ -16,7 +16,7 @@ const TechnologiesCard = () => {
         ]);
         setCurrentIndex(currentIndex + 1);
       }
-    }, 150);
+    }, 100);
     return () => clearTimeout(timer);
   }, [currentIndex]);
 
@@ -29,7 +29,7 @@ const TechnologiesCard = () => {
           {renderedTechnologies.map((technology) => (
             <li
               key={technology.id}
-              className={`animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
+              className={` animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
               style={{ backgroundColor: "#303848" }}>
               <img
                 src={technology.img}

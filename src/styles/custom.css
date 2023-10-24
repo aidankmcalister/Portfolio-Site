@@ -12,8 +12,11 @@
   --custom-light-blue-shadow: #303848;
 }
 
-/* #region Navbar */
 .svg-fill:hover > svg {
   fill: var(--custom-secondary-gold-dark);
 }
-/* #endregion */
+
+.subtext-span:hover {
+  color: white;
+  cursor: default;
+}
