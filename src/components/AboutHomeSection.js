@@ -29,7 +29,7 @@ const AboutHomeSection = () => {
         <span>McALISTER</span>
       </h1>
       <div
-        className={`md:my-10 h-auto text-slate-500 cursor-default text-2xl animate-fade-left font-sometype`}>
+        className={`flex items-end md:my-10 h-auto text-slate-500 cursor-default text-2xl animate-fade-left font-sometype`}>
         {isSmallScreen ? (
           <p className="tracking-widest">
             <span className="">JUNIOR</span>
@@ -40,11 +40,14 @@ const AboutHomeSection = () => {
           </p>
         ) : (
           Array.from(renderedText).map((letter, index) => (
-            <span key={index} className={`${subtextClasses} animate-fade-up`}>
+            <span
+              key={index}
+              className={`${subtextClasses} animate-pulse animate-once`}>
               {letter}
             </span>
           ))
         )}
+        <h4 className="mb-1 text-3xl blink-soft">_</h4>
       </div>
       <div className=" mt-2 object-fill hover:scale-105 transform origin-center transition-all">
         <button className="border-slate-300 text-xl items-center hover:bg-custom-secondary-blue-dark text-slate-300 animate-fade-left border rounded-full p-2 px-4 font-sometype flex transition-all">

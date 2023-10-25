@@ -29,7 +29,7 @@ const TechnologiesCard = () => {
           <li
             key={technology.id}
             className={` animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
-            style={{ backgroundColor: "#303848" }}>
+            style={{ backgroundColor: "#334155" }}>
             <img
               src={technology.img}
               alt={technology.name}

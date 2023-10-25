@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div className="">
-        <ParticlesBackground />
+      <div className="overflow-x-hidden">
+        <div className="">
+          <ParticlesBackground />
+        </div>
+        <NavbarComponent />
+        <Landing />
+        <Footer />
       </div>
-      <NavbarComponent />
-      <Landing />
-      <Footer />
     </>
   );
 }

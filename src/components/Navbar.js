@@ -1,32 +1,33 @@
 import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
 import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
 import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
+import { ReactComponent as userIcon } from "../app/assets/imgs/user.svg";
 import HamburgerComponent from "./Hamburger";
 // import { ReactComponent as Logo } from "../app/assets/imgs/no-background-logo.svg";
 
-const UserIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="2"
-      stroke="currentColor"
-      className="w-6 h-6 mr-1.5">
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-      />
-    </svg>
-  );
-};
+// const UserIcon = () => {
+//   return (
+//     <svg
+//       xmlns="http://www.w3.org/2000/svg"
+//       fill="none"
+//       viewBox="0 0 24 24"
+//       stroke-width="2"
+//       stroke="currentColor"
+//       className="w-6 h-6 mr-1.5">
+//       <path
+//         stroke-linecap="round"
+//         stroke-linejoin="round"
+//         d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+//       />
+//     </svg>
+//   );
+// };
 
 const NavItem = ({ to, children }) => {
   const linkClasses =
-    "flex cursor-pointer opacity-75 px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-slate-300 transition-all";
+    "origin-center flex border-slate-300 border-2 cursor-pointer opacity-75 px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-slate-300 transition-all";
   const hoverClasses =
-    "hover:text-slate-300 hover:-translate-y-1 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fil fill-slate-300";
+    "hover:text-slate-300 hover:border-slate-600 hover:scale-110 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fil fill-slate-300";
 
   return (
     <li className="flex items-center">
@@ -57,7 +58,7 @@ const NavbarComponent = () => {
                 Portfolio
               </NavItem>
               <NavItem to="#about">
-                <UserIcon />
+                <userIcon width={"1.4rem"} />
                 About
               </NavItem>
               <NavItem to="#contact">

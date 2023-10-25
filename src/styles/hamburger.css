@@ -51,7 +51,7 @@ body {
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--background);
+  background-color: #cbd5e1;
   border-radius: 1rem;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -89,12 +89,12 @@ body {
   position: absolute;
   translate: -120%;
   margin: 0.3rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 0rem);
-  background-color: var(--foreground);
-  color: var(--background);
+  display: flex;
+  align-items: center;
   width: 13rem;
-  min-height: 35vh;
+  min-height: 30vh;
   border-radius: 1.5rem;
   z-index: 6;
 }
