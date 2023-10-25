@@ -6,7 +6,7 @@ import { ParticlesBackground } from "./features/particleBackground";
 function App() {
   return (
     <>
-      <div className="-z-10 absolute h-full w-full">
+      <div className="">
         <ParticlesBackground />
       </div>
       <NavbarComponent />

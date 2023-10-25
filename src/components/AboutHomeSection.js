@@ -19,17 +19,17 @@ const AboutHomeSection = () => {
     return () => clearTimeout(timer);
   }, [currentIndex, letters]);
 
-  const isSmallScreen = window.innerWidth < 640; // Define your threshold for small screens
+  const isSmallScreen = window.innerWidth < 640;
 
   return (
-    <div className="mx-4 -mt-10 h-96 md:h-screen flex flex-col justify-center items-start">
+    <div className="md:ml-28 md:-mt-10 mx-4 mt-14 h-96 md:h-screen flex flex-col justify-center items-start">
       <h1 className="text-5xl text-slate-300 animate-fade-left my-1 font-rubik">
         <span>AIDAN</span>
         <br />
         <span>McALISTER</span>
       </h1>
       <div
-        className={`h-auto text-slate-600 cursor-default text-2xl animate-fade-left font-sometype`}>
+        className={`md:my-10 h-auto text-slate-500 cursor-default text-2xl animate-fade-left font-sometype`}>
         {isSmallScreen ? (
           <p className="tracking-widest">
             <span className="">JUNIOR</span>

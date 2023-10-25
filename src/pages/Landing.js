@@ -8,10 +8,10 @@ const Landing = () => {
   return (
     <div>
       <AboutHomeSection />
-      <LazyLoad height={350} threshold={0.3}>
+      <LazyLoad height={360} threshold={0.3}>
         <TechnologiesCard />
       </LazyLoad>
-      <LazyLoad height={350} threshold={0.3}>
+      <LazyLoad height={360} threshold={0.3}>
         <PortfolioCard />
       </LazyLoad>
     </div>

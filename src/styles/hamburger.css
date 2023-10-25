@@ -11,8 +11,8 @@ body {
 :root {
   --color1: #121824;
   --color2: var(--custom-text-dark);
-  --bar-width: 2rem;
-  --bar-height: 0.3rem;
+  --bar-width: 1.7rem;
+  --bar-height: 0.15rem;
   --hamburger-gap: 0.4rem;
   --foreground: var(--color1);
   --background: var(--color2);
