@@ -2,7 +2,7 @@ import Hamburger from "./Hamburger";
 import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
 import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
 import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
-import { ReactComponent as Logo } from "../app/assets/imgs/no-background-logo.svg";
+// import { ReactComponent as Logo } from "../app/assets/imgs/no-background-logo.svg";
 
 const UserIcon = () => {
   return (
