@@ -46,9 +46,9 @@ const AboutHomeSection = () => {
           ))
         )}
       </div>
-      <div className="mt-2 object-fill hover:scale-105 transform origin-center transition-all">
-        <button className="border-slate-300 text-xl items-center hover:bg-custom-secondary-blue-dark text-slate-300 animate-fade-left border rounded-full p-2 px-4 font-rubik flex transition-all">
-          Resume
+      <div className=" mt-2 object-fill hover:scale-105 transform origin-center transition-all">
+        <button className="border-slate-300 text-xl items-center hover:bg-custom-secondary-blue-dark text-slate-300 animate-fade-left border rounded-full p-2 px-4 font-sometype flex transition-all">
+          RESUME
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

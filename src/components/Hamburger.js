@@ -16,7 +16,7 @@ export const NavItem = ({ to, children }) => {
   );
 };
 
-const Hamburger = () => {
+const HamburgerComponent = () => {
   return (
     <div>
       <label className="hamburger-menu">
@@ -26,19 +26,19 @@ const Hamburger = () => {
         <nav>
           <ul className="cursor-pointer text-2xl">
             <NavItem to="#home">
-              <HomeIcon className="mr-2" width={"1.4rem"} />
+              <HomeIcon className="mr-1" width={"1.4rem"} />
               Home
             </NavItem>
             <NavItem to="#portfolio">
-              <FolderIcon className="mr-2" width={"1.4rem"} />
+              <FolderIcon className="mr-1" width={"1.4rem"} />
               Portfolio
             </NavItem>
             <NavItem to="#about">
-              <UserIcon className="mr-2" width={"1.4rem"} />
+              <UserIcon className="mr-1" width={"1.4rem"} />
               About
             </NavItem>
             <NavItem to="#contact">
-              <SendIcon className="mr-2" width={"1.4rem"} />
+              <SendIcon className="mr-1" width={"1.4rem"} />
               Contact
             </NavItem>
           </ul>
@@ -48,4 +48,4 @@ const Hamburger = () => {
   );
 };
 
-export default Hamburger;
+export default HamburgerComponent;

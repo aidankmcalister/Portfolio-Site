@@ -1,7 +1,7 @@
-import Hamburger from "./Hamburger";
 import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
 import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
 import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
+import HamburgerComponent from "./Hamburger";
 // import { ReactComponent as Logo } from "../app/assets/imgs/no-background-logo.svg";
 
 const UserIcon = () => {
@@ -41,15 +41,13 @@ const NavbarComponent = () => {
   return (
     <div>
       <div className="md:hidden">
-        <Hamburger />
+        <HamburgerComponent />
       </div>
       <header className=" text-white p-2">
         <div className="flex w-full justify-between items-center">
-          <div className="order-2 md:order-1 ml-auto md:ml-0">
-            {/* <Logo width={"12rem"} height={"3rem"} style={{ lineHeight: 0 }} /> */}
-          </div>
+          <div className="order-2 md:order-1 ml-auto md:ml-0"></div>
           <div className="order-1 md:order-2">
-            <ul className="hidden md:flex space-x-4 cursor-pointer">
+            <ul className="animate-fade-left hidden md:flex space-x-4 cursor-pointer">
               <NavItem to="#home">
                 <HomeIcon className="mr-2 " width={"1.4rem"} />
                 Home

@@ -35,8 +35,11 @@ export const ParticlesBackground = () => {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
   return (
     <Particles
+      className="-z-50"
+      style={{ zIndex: -999 }}
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

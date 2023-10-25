@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --custom-text-dark: #ffffff;
+  --custom-text-dark: #cbd5e1;
   --custom-primary-blue-dark: #0d121c;
   --custom-secondary-blue-dark: #192234;
   --custom-primary-gold-dark: #947947;
