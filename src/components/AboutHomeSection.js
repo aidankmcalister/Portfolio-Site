@@ -20,22 +20,35 @@ const AboutHomeSection = () => {
     return () => clearTimeout(timer);
   }, [currentIndex, letters]);
 
+  const isSmallScreen = window.innerWidth < 640; // Define your threshold for small screens
+
   return (
-    <div className="m-4 h-96 flex flex-col justify-center items-start ">
-      <h1 className="text-4xl text-slate-300 animate-fade-left my-4 font-rubik">
-        <span className="">AIDAN</span>
+    <div className="mx-4 -mt-10 h-96 md:h-screen flex flex-col justify-center items-start">
+      <h1 className="text-5xl text-slate-300 animate-fade-left my-1 font-rubik">
+        <span>AIDAN</span>
         <br />
-        <span className="">McALISTER</span>
+        <span>McALISTER</span>
       </h1>
-      <div className="text-slate-600 cursor-default h-1/6 text-xl animate-fade-left animate-delay-50">
-        {Array.from(renderedText).map((letter, index) => (
-          <span key={index} className={`${subtextClasses} animate-fade-up`}>
-            {letter}
-          </span>
-        ))}
+      <div
+        className={`h-auto text-slate-600 cursor-default text-2xl animate-fade-left font-sometype`}>
+        {isSmallScreen ? (
+          <p className="tracking-widest">
+            <span className="">JUNIOR</span>
+            <br />
+            <span className="">FULL-STACK</span>
+            <br />
+            <span className="">DEVELOPER</span>
+          </p>
+        ) : (
+          Array.from(renderedText).map((letter, index) => (
+            <span key={index} className={`${subtextClasses} animate-fade-up`}>
+              {letter}
+            </span>
+          ))
+        )}
       </div>
-      <div className="mt-2 object-fill hover:scale-105 transform origin-center  transition-all">
-        <button className="border-slate-300 items-center hover:bg-custom-secondary-blue-dark text-slate-300 animate-fade-left animate-delay-75 border rounded-full p-2 px-4 font-rubik flex transition-all">
+      <div className="mt-2 object-fill hover:scale-105 transform origin-center transition-all">
+        <button className="border-slate-300 text-xl items-center hover:bg-custom-secondary-blue-dark text-slate-300 animate-fade-left border rounded-full p-2 px-4 font-rubik flex transition-all">
           Resume
           <svg
             xmlns="http://www.w3.org/2000/svg"

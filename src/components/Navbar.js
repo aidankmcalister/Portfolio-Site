@@ -24,9 +24,9 @@ const UserIcon = () => {
 
 const NavItem = ({ to, children }) => {
   const linkClasses =
-    "flex cursor-pointer px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-custom-primary-gold-dark transition-all";
+    "flex cursor-pointer px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-slate-300 transition-all";
   const hoverClasses =
-    "hover:text-custom-secondary-gold-dark hover:-translate-y-1 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fill";
+    "hover:text-slate-300 hover:-translate-y-1 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fil fill-slate-300";
 
   return (
     <li className="flex items-center">
