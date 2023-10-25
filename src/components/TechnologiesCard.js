@@ -21,27 +21,25 @@ const TechnologiesCard = () => {
   }, [currentIndex]);
 
   return (
-    <div className="md:h-52 h-80 bg-custom-secondary-blue-dark m-4 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg  shadow-lg shadow-custom-light-blue-shadow font-rubik">
-      <div className="">
-        <h1 className="text-2xl">Skills</h1>
-        <hr className="w-full my-2 text-lg mt-1" />
-        <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
-          {renderedTechnologies.map((technology) => (
-            <li
-              key={technology.id}
-              className={` animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
-              style={{ backgroundColor: "#303848" }}>
-              <img
-                src={technology.img}
-                alt={technology.name}
-                width={"25rem"}
-                className="mr-3"
-              />
-              {technology.name}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="md:h-52 h-80 m-4 bg-opacity-70 bg-slate-800 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg  shadow-lg shadow-custom-light-blue-shadow font-rubik">
+      <h1 className="text-2xl">Skills</h1>
+      <hr className="w-full my-2 text-lg mt-1" />
+      <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
+        {renderedTechnologies.map((technology) => (
+          <li
+            key={technology.id}
+            className={` animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
+            style={{ backgroundColor: "#303848" }}>
+            <img
+              src={technology.img}
+              alt={technology.name}
+              width={"25rem"}
+              className="mr-3"
+            />
+            {technology.name}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
