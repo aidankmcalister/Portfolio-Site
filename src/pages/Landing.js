@@ -6,12 +6,12 @@ import LazyLoad from "react-lazy-load";
 
 const Landing = () => {
   return (
-    <div>
+    <div className="bg-custom-primary-blue-dark">
       <AboutHomeSection />
       <LazyLoad height={360} threshold={0.3}>
         <TechnologiesCard />
       </LazyLoad>
-      <LazyLoad height={360} threshold={0.3}>
+      <LazyLoad height={800} threshold={0.3}>
         <PortfolioCard />
       </LazyLoad>
     </div>
