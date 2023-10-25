@@ -24,7 +24,7 @@ const UserIcon = () => {
 
 const NavItem = ({ to, children }) => {
   const linkClasses =
-    "flex cursor-pointer px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-slate-300 transition-all";
+    "flex cursor-pointer opacity-75 px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-slate-300 transition-all";
   const hoverClasses =
     "hover:text-slate-300 hover:-translate-y-1 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fil fill-slate-300";
 
@@ -43,7 +43,7 @@ const NavbarComponent = () => {
       <div className="md:hidden">
         <Hamburger />
       </div>
-      <header className="bg-custom-primary-blue-dark text-white p-2">
+      <header className=" text-white p-2">
         <div className="flex w-full justify-between items-center">
           <div className="order-2 md:order-1 ml-auto md:ml-0">
             {/* <Logo width={"12rem"} height={"3rem"} style={{ lineHeight: 0 }} /> */}

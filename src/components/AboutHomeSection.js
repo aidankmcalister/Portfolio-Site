@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import newTabIcon from "../app/assets/imgs/logos/icons8-new-tab.svg";
 
 const subtextClasses = "mr-2 hover:text-white transition-all font-sometype";
 
