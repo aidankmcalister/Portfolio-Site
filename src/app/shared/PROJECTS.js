@@ -36,4 +36,12 @@ export const PROJECTS = [
     name: "Project 4 ",
     description: "test project.",
   },
+  {
+    id: 5,
+    // img: "https://placehold.co/600x400",
+    lang: ["", "python", "react", "bootstrap", ""],
+    img: "",
+    name: "Project 5 ",
+    description: "test project.",
+  },
 ];

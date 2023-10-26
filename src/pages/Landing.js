@@ -1,19 +1,17 @@
 import AboutHomeSection from "../components/AboutHomeSection";
 import TechnologiesCard from "../components/TechnologiesCard";
-import PortfolioCard from "../components/PortfolioCard";
-import React from "react";
-import LazyLoad from "react-lazy-load";
+// import PortfolioCard from "../components/PortfolioCard";
+import React, { lazy } from "react";
+// import LazyLoad from "react-lazy-load";
+
+const PortfolioCard = lazy(() => import("../components/PortfolioCard.js"));
 
 const Landing = () => {
   return (
     <div className="">
       <AboutHomeSection />
-      <LazyLoad height={360} threshold={0.1}>
-        <TechnologiesCard />
-      </LazyLoad>
-      <LazyLoad threshold={0.8}>
-        <PortfolioCard />
-      </LazyLoad>
+      <TechnologiesCard />
+      <PortfolioCard />
     </div>
   );
 };

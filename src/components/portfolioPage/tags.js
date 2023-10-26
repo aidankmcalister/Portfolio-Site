@@ -9,17 +9,17 @@ const JsTag = () => (
 );
 const BootstrapTag = () => (
   <div
-    className={`bg-purple-800 border-purple-500 text-purple-500 ${tagClasses}`}>
+    className={`bg-purple-900 border-purple-400 text-purple-400 ${tagClasses}`}>
     BOOTSTRAP
   </div>
 );
 const TailwindTag = () => (
-  <div className={`bg-blue-800 border-blue-500 text-blue-500 ${tagClasses}`}>
+  <div className={`bg-blue-900 border-blue-400 text-blue-400 ${tagClasses}`}>
     TAILWIND
   </div>
 );
 const PythonTag = () => (
-  <div className={`bg-blue-700 border-blue-300 text-blue-300 ${tagClasses}`}>
+  <div className={`bg-sky-900 border-sky-300 text-sky-300 ${tagClasses}`}>
     PYTHON
   </div>
 );

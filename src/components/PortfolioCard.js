@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PROJECTS } from "../app/shared/PROJECTS";
 import { tag } from "./portfolioPage/tags";
+// import LazyLoad from "react-lazy-load";
 
 const PortfolioCard = () => {
   const [renderedProjects, setRenderedProjects] = useState([]);
@@ -34,6 +35,7 @@ const PortfolioCard = () => {
       <hr className="w-full my-2 text-lg mt-1" />
       <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
         {renderedProjects.map((project) => (
+          // <LazyLoad height={300} threshold={0.1}>
           <li
             key={project.id}
             className="flex-col animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow"
@@ -49,7 +51,7 @@ const PortfolioCard = () => {
               <div className="flex justify-between">
                 <div className="font-rubik text-xl my-1">{project.name}</div>
                 <a
-                  className="flex items-center rounded-full text-sm px-2 my-1 bg-opacity-70 border-slate-300 text-slate-300 border"
+                  className="shadow-sm shadow-slate-300 flex items-center rounded-full text-sm px-2 my-1 bg-opacity-70 border-slate-300 text-slate-300 border"
                   href={`/project/${project.id}`}>
                   Find Out!
                 </a>
@@ -57,6 +59,7 @@ const PortfolioCard = () => {
               <div className="">{tag(project.lang)}</div>
             </div>
           </li>
+          // </LazyLoad>
         ))}
       </ul>
     </div>
