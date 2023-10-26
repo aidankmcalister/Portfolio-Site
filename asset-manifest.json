@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Site/static/css/main.10f1d197.css",
+    "main.js": "/Portfolio-Site/static/js/main.2906e972.js",
+    "static/js/787.6be05d16.chunk.js": "/Portfolio-Site/static/js/787.6be05d16.chunk.js",
+    "static/media/python-logo.svg": "/Portfolio-Site/static/media/python-logo.e1de764c798b8710f2f33ba81225de14.svg",
+    "index.html": "/Portfolio-Site/index.html",
+    "static/media/html-5-logo-svgrepo-com.svg": "/Portfolio-Site/static/media/html-5-logo-svgrepo-com.e248da514edac2a2a66bde8fa0166701.svg",
+    "static/media/css-3-logo-svgrepo-com.svg": "/Portfolio-Site/static/media/css-3-logo-svgrepo-com.62dd7a7609a4f5253941ee34c348b64e.svg",
+    "static/media/logo-javascript.svg": "/Portfolio-Site/static/media/logo-javascript.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/github-mark.svg": "/Portfolio-Site/static/media/github-mark.79568e5c57f1b952d2da00c76e5e3d5e.svg",
+    "static/media/Tailwind_CSS_Logo.svg": "/Portfolio-Site/static/media/Tailwind_CSS_Logo.79614a5f61617ba49a0891494521226b.svg",
+    "static/media/iconmonstr-linkedin-3.svg": "/Portfolio-Site/static/media/iconmonstr-linkedin-3.4463c67f88287658718c535f6e8e6629.svg",
+    "static/media/React-icon.svg": "/Portfolio-Site/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "static/media/home.svg": "/Portfolio-Site/static/media/home.f981ee9d6dcfecf8c081d9efc60e5d95.svg",
+    "static/media/send.svg": "/Portfolio-Site/static/media/send.fab9d9661d8d41abd207906755d8209e.svg",
+    "static/media/user.svg": "/Portfolio-Site/static/media/user.780a52a3688dd2fd0230fe4949982dd5.svg",
+    "static/media/folder.svg": "/Portfolio-Site/static/media/folder.131f06eb968394918a3f4b04151f5a03.svg",
+    "main.10f1d197.css.map": "/Portfolio-Site/static/css/main.10f1d197.css.map",
+    "main.2906e972.js.map": "/Portfolio-Site/static/js/main.2906e972.js.map",
+    "787.6be05d16.chunk.js.map": "/Portfolio-Site/static/js/787.6be05d16.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10f1d197.css",
+    "static/js/main.2906e972.js"
+  ]
+}
