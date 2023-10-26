@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { TECHNOLOGIES } from "../app/shared/TECHNOLOGIES";
 
 const TechnologiesCard = () => {
-  console.log(TECHNOLOGIES[0]);
-
   const [renderedTechnologies, setRenderedTechnologies] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,7 +19,7 @@ const TechnologiesCard = () => {
   }, [currentIndex]);
 
   return (
-    <div className="md:h-52 h-80 m-4 bg-opacity-70 bg-slate-800 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg  shadow-lg shadow-custom-light-blue-shadow font-rubik">
+    <div className="md:h-52 h-80 m-4 bg-opacity-70 bg-slate-800 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg font-rubik">
       <h1 className="text-2xl">Skills</h1>
       <hr className="w-full my-2 text-lg mt-1" />
       <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">

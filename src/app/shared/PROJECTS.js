@@ -8,9 +8,32 @@ export const PROJECTS = [
   },
   {
     id: 1,
-    img: "https://placehold.co/600x400",
+    img: "",
     lang: ["js", "tailwind", "react"],
     name: "Portfolio Site",
     description: "This site.",
+  },
+  {
+    id: 2,
+    img: "",
+    lang: ["bootstrap", "python", "tailwind", "react"],
+    name: "Project 2",
+    description: "test project",
+  },
+  {
+    id: 3,
+    // img: "https://placehold.co/600x400",
+    lang: ["js", "python", "react"],
+    img: "https://placehold.co/600x400",
+    name: "Project 3 ",
+    description: "test project.",
+  },
+  {
+    id: 4,
+    // img: "https://placehold.co/600x400",
+    lang: ["js", "python", "react"],
+    img: "https://placehold.co/600x400",
+    name: "Project 4 ",
+    description: "test project.",
   },
 ];

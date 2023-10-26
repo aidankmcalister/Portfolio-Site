@@ -19,6 +19,7 @@ module.exports = {
         "custom-primary-gold-light": "var(--custom-primary-gold-light)",
         "custom-secondary-gold-light": "var(--custom-secondary-gold-light)",
         "custom-light-blue-shadow": "var(--custom-light-blue-shadow)",
+        "main-secondary-blue": "var(--main-secondary-blue)",
       },
     },
   },

@@ -3,6 +3,9 @@ import { loadFull } from "tsparticles";
 
 export const ParticlesBackground = () => {
   const options = {
+    fullScreen: {
+      zIndex: -1,
+    },
     background: {
       color: "#0d121c",
     },
@@ -38,8 +41,7 @@ export const ParticlesBackground = () => {
 
   return (
     <Particles
-      className="-z-50"
-      style={{ zIndex: -999 }}
+      // style={{ zIndex: "-999" }}
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
