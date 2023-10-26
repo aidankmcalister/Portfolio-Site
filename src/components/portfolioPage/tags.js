@@ -24,7 +24,7 @@ const PythonTag = () => (
   </div>
 );
 const ReactTag = () => (
-  <div className={`bg-blue-800 border-blue-400 text-blue-400 ${tagClasses}`}>
+  <div className={`bg-cyan-800 border-cyan-400 text-cyan-400 ${tagClasses}`}>
     REACT JS
   </div>
 );

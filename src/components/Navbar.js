@@ -1,7 +1,7 @@
 import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
 import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
 import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
-import { ReactComponent as userIcon } from "../app/assets/imgs/user.svg";
+import { ReactComponent as AboutIcon } from "../app/assets/imgs/user.svg";
 import HamburgerComponent from "./Hamburger";
 // import { ReactComponent as Logo } from "../app/assets/imgs/no-background-logo.svg";
 
@@ -58,7 +58,7 @@ const NavbarComponent = () => {
                 Portfolio
               </NavItem>
               <NavItem to="#about">
-                <userIcon width={"1.4rem"} />
+                <AboutIcon className="mr-2" width={"1.4rem"} />
                 About
               </NavItem>
               <NavItem to="#contact">

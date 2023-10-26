@@ -8,10 +8,10 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router className="">
+    <Router>
       <div className="overflow-x-hidden relative min-h-screen flex ">
         <div className="grow flex flex-col">
-          <div className="">
+          <div>
             <ParticlesBackground />
           </div>
           <NavbarComponent />

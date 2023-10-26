@@ -11,7 +11,7 @@ const Landing = () => {
       <LazyLoad height={360} threshold={0.1}>
         <TechnologiesCard />
       </LazyLoad>
-      <LazyLoad threshold={0.1}>
+      <LazyLoad threshold={0.8}>
         <PortfolioCard />
       </LazyLoad>
     </div>
