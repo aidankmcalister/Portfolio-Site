@@ -24,18 +24,17 @@ const PortfolioCard = () => {
       <div className="flex justify-between flex-row">
         <h1 className="text-2xl text-slate-300">Portfolio</h1>
 
-        <div className="flex flex-row items-center">
+        {/* <div className="flex flex-row items-center">
           <p className="mx-1 font-sometype text-slate-400">DESC.</p>
           <label class="switch">
             <input type="checkbox" />
             <span class="slider"></span>
           </label>
-        </div>
+        </div> */}
       </div>
       <hr className="w-full my-2 text-lg mt-1" />
       <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
         {renderedProjects.map((project) => (
-          // <LazyLoad height={300} threshold={0.1}>
           <li
             key={project.id}
             className="flex-col animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow"
@@ -48,18 +47,21 @@ const PortfolioCard = () => {
               />
             )}
             <div>
-              <div className="flex justify-between">
-                <div className="font-rubik text-xl my-1">{project.name}</div>
-                <a
-                  className="shadow-sm shadow-slate-300 flex items-center rounded-full text-sm px-2 my-1 bg-opacity-70 border-slate-300 text-slate-300 border"
+              {/* <div className="flex justify-between"> */}
+
+              <div className=" font-rubik text-xl my-1">{project.name}</div>
+
+              {/* <a
+                  style={{ boxShadow: "0px 0px .25rem" }}
+                  className="shadow-slate-300 flex items-center rounded-full text-sm px-2 my-1 bg-opacity-70 border-slate-300 text-slate-300 border"
                   href={`/project/${project.id}`}>
                   Find Out!
                 </a>
-              </div>
-              <div className="">{tag(project.lang)}</div>
+              </div> */}
+
+              {tag(project.lang)}
             </div>
           </li>
-          // </LazyLoad>
         ))}
       </ul>
     </div>

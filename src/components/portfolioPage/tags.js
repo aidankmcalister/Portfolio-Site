@@ -1,30 +1,38 @@
 const tagClasses =
-  "border font-rubik rounded-lg bg-opacity-75 my-1 px-1.5 py-0.5 text-xs inline-block mx-0.5";
-
+  "border font-rubik rounded-lg bg-opacity-75 px-1 py-0.5 text-xs inline-block mr-2 my-1";
+const tagStyle = { boxShadow: "0px 0px .25rem" };
 const JsTag = () => (
   <div
+    style={tagStyle}
     className={`bg-yellow-800 border-yellow-500 text-yellow-500 ${tagClasses}`}>
     JAVASCRIPT
   </div>
 );
 const BootstrapTag = () => (
   <div
+    style={tagStyle}
     className={`bg-purple-900 border-purple-400 text-purple-400 ${tagClasses}`}>
     BOOTSTRAP
   </div>
 );
 const TailwindTag = () => (
-  <div className={`bg-blue-900 border-blue-400 text-blue-400 ${tagClasses}`}>
+  <div
+    style={tagStyle}
+    className={`bg-blue-900 border-blue-400 text-blue-400 ${tagClasses}`}>
     TAILWIND
   </div>
 );
 const PythonTag = () => (
-  <div className={`bg-sky-900 border-sky-300 text-sky-300 ${tagClasses}`}>
+  <div
+    style={tagStyle}
+    className={`bg-sky-900 border-sky-300 text-sky-300 ${tagClasses}`}>
     PYTHON
   </div>
 );
 const ReactTag = () => (
-  <div className={`bg-cyan-800 border-cyan-400 text-cyan-400 ${tagClasses}`}>
+  <div
+    style={tagStyle}
+    className={`bg-cyan-800 border-cyan-400 text-cyan-400 ${tagClasses}`}>
     REACT JS
   </div>
 );
