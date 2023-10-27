@@ -6,7 +6,7 @@ const labelClasses = "text-xl my-0.5 ";
 const inputClasses =
   "font-rubik px-1.5 py-1 rounded-lg bg-slate-300 text-slate-700 opacity-70";
 
-const ContactForm = () => {
+const ContactForm = ({ hideForm }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,6 +20,8 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+
+          hideForm();
         },
         (error) => {
           console.log(error.text);
@@ -30,7 +32,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={sendEmail}>
       <div className={`${containerClasses} border-blue-500`}>
-        <label className={`${labelClasses}`} for="name">
+        <label className={`${labelClasses}`} htmlFor="name">
           NAME
         </label>
         <input
@@ -41,7 +43,7 @@ const ContactForm = () => {
         />
       </div>
       <div className={`${containerClasses} border-blue-500`}>
-        <label className={`${labelClasses}`} for="email">
+        <label className={`${labelClasses}`} htmlFor="email">
           EMAIL
         </label>
         <input
@@ -52,7 +54,7 @@ const ContactForm = () => {
         />
       </div>
       <div className={`${containerClasses} border-purple-500`}>
-        <label className={`${labelClasses}`} for="subject">
+        <label className={`${labelClasses}`} htmlFor="subject">
           SUBJECT
         </label>
         <input
@@ -63,7 +65,7 @@ const ContactForm = () => {
         />
       </div>
       <div className={`${containerClasses} border-yellow-500`}>
-        <label className={`${labelClasses}`} for="message">
+        <label className={`${labelClasses}`} htmlFor="message">
           MESSAGE
         </label>
         <input
