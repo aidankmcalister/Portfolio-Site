@@ -30,6 +30,7 @@ const Landing = () => {
           className="cursor-pointer w-full flex justify-center h-11 -mt-28 animate-fade-up">
           <img
             className="animate-pulse animate-infinite opacity-70"
+            alt="Down Arrow"
             src={downArrow}
           />
         </ScrollLink>

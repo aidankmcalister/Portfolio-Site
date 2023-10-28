@@ -1,6 +1,5 @@
 import React from "react";
 import tulsaMap from "../app/assets/imgs/tulsa-map.png";
-import { Carousel } from "@material-tailwind/react";
 
 const AboutImgCard = () => {
   return (
