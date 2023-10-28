@@ -13,7 +13,7 @@
 }
 
 .svg-fill:hover > svg {
-  fill: var(--custom-secondary-gold-dark);
+  fill: #cbd5e1;
 }
 
 .subtext-span:hover {

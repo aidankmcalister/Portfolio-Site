@@ -14,7 +14,7 @@ const NavbarComponent = () => {
       <header className="text-white p-2">
         <div className="flex w-full justify-end items-center">
           <div className="order-1 md:order-2">
-            <ul className="animate-fade-left hidden md:flex space-x-4 cursor-pointer">
+            <ul className="animate-fade-left hidden md:flex space-x-4 cursor-pointer mt-2 mr-2">
               <NavItem to="projects">
                 <FolderIcon className="mr-2 " width={"1.4rem"} />
                 Projects
@@ -37,9 +37,9 @@ const NavbarComponent = () => {
 
 const NavItem = ({ to, children }) => {
   const linkClasses =
-    "origin-center flex border-slate-300 border-2 cursor-pointer opacity-75 px-4 py-2 bg-custom-secondary-blue-dark rounded-full text-slate-300 transition-all";
+    "origin-center flex border-slate-300 border-2 cursor-pointer opacity-75 px-4 py-2 rounded-full text-slate-300 transition-all";
   const hoverClasses =
-    "hover:text-slate-300 hover:border-slate-600 hover:scale-110 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fill fill-slate-300";
+    "hover:bg-slate-800 hover:text-slate-300 hover:border-slate-600 hover:scale-110 hover:duration-300 hover:ease-in-out shadow-md hover:shadow-custom-light-blue-shadow svg-fill fill-slate-300";
 
   return (
     <li className="flex items-center">
