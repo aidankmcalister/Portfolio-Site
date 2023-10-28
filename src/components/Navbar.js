@@ -1,22 +1,18 @@
-import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
+// import { ReactComponent as HomeIcon } from "../app/assets/imgs/home.svg";
 import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
 import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
 import { ReactComponent as AboutIcon } from "../app/assets/imgs/user.svg";
 import HamburgerComponent from "./Hamburger";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavbarComponent = () => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   return (
     <div>
       <div className="md:hidden">
         <HamburgerComponent />
       </div>
       <header className="text-white p-2">
-        <div className="flex w-full justify-between items-center">
+        <div className="flex w-full justify-end items-center">
           <div className="order-1 md:order-2">
             <ul className="animate-fade-left hidden md:flex space-x-4 cursor-pointer">
               <NavItem to="projects">

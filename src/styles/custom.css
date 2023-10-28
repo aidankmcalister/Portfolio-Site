@@ -73,3 +73,16 @@
 .switch input:checked + .slider:before {
   transform: translateX(1.25rem);
 }
+
+.rainbow-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 146, 60, 1) 0%,
+    rgba(239, 68, 68, 1) 50%,
+    rgba(244, 114, 182, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 0.5rem crimson);
+}

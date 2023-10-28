@@ -21,7 +21,7 @@ const PortfolioCard = () => {
   }, [currentIndex]);
 
   return (
-    <div className="md:h-52 bg-opacity-70 bg-slate-800 m-4 rounded-lg p-3 flex flex-col text-white max-w-lg animate-fade-up opacity-80 font-rubik">
+    <div className="md:w-3/4 bg-opacity-70 bg-slate-800 m-4 rounded-lg p-3 flex flex-col text-white animate-fade-up opacity-80 font-rubik">
       <div className="flex justify-between flex-row">
         <h1 className="text-2xl text-slate-300">Portfolio</h1>
       </div>

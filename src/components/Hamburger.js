@@ -3,7 +3,7 @@ import React from "react";
 import { ReactComponent as UserIcon } from "../app/assets/imgs/user.svg";
 import { ReactComponent as FolderIcon } from "../app/assets/imgs/folder.svg";
 import { ReactComponent as SendIcon } from "../app/assets/imgs/send.svg";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 export const NavItem = ({ to, children }) => {
   return (
@@ -20,9 +20,6 @@ export const NavItem = ({ to, children }) => {
 };
 
 const HamburgerComponent = () => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
   return (
     <div>
       <label className="hamburger-menu">

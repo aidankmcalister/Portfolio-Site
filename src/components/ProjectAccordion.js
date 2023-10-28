@@ -5,6 +5,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import { tag } from "./portfolioPage/tags";
+import { Link } from "react-router-dom";
 
 function Icon({ isOpen }) {
   return (
@@ -27,6 +28,7 @@ function Icon({ isOpen }) {
 }
 
 const ProjectAccordion = ({ project }) => {
+  const projectId = project.id;
   const [open, setOpen] = useState(false);
   const [contentVisible, setContentVisible] = useState(false);
 
@@ -64,6 +66,14 @@ const ProjectAccordion = ({ project }) => {
             contentVisible ? "block" : "hidden"
           }`}>
           {project.description}
+          <br />
+          <div className="inline-block p-1 mt-2 mb-1">
+            <Link
+              to={`project/${projectId}`}
+              className="border-slate-300 hover:scale-105 text-lg items-center hover:bg-custom-secondary-blue-dark text-slate-300 border rounded-full p-1 px-2 font-sometype flex transition-all">
+              Learn More
+            </Link>
+          </div>
         </div>
       </AccordionBody>
     </Accordion>
