@@ -9,23 +9,26 @@ const PortfolioCard = lazy(() => import("../components/PortfolioCard.js"));
 
 const Landing = () => {
   return (
-    <div className="">
-      <a href="#home">
+    <div>
+      <div id="home">
         <AboutHomeSection />
-        <a className="cursor-pointer w-full flex justify-center h-11 -mt-32 animate-pulse animate-infinite">
-          <img className="opacity-70" src={downArrow} />
+        <a className="cursor-pointer w-full flex justify-center h-11 -mt-32 animate-fade-up">
+          <img
+            className="animate-pulse animate-infinite opacity-70"
+            src={downArrow}
+          />
         </a>
-      </a>
-      <a href="#projects">
+      </div>
+      <div id="projects">
         <TechnologiesCard />
         <PortfolioCard />
-      </a>
-      <a href="#about">
+      </div>
+      <div id="about">
         <AboutMeCard />
-      </a>
-      <a href="#contact">
-        <ContactCard />
-      </a>
+        <div id="contact">
+          <ContactCard />
+        </div>
+      </div>
     </div>
   );
 };
