@@ -22,7 +22,7 @@ const AboutHomeSection = () => {
   const isSmallScreen = window.innerWidth < 640;
 
   return (
-    <div className="md:ml-28 md:-mt-10 mx-4 my-20 h-96 md:h-screen flex flex-col justify-center items-start">
+    <div className="h-screen md:ml-28 -mt-16 mx-4 md:h-screen flex flex-col justify-center items-start">
       <h1 className="text-5xl text-slate-300 animate-fade-left my-1 font-rubik">
         <span>AIDAN</span>
         <br />
@@ -47,7 +47,7 @@ const AboutHomeSection = () => {
             </span>
           ))
         )}
-        <h4 className="mb-1 text-3xl blink-soft">_</h4>
+        <h4 className="mb-0.5 -ml-3 text-2xl blink-soft">_</h4>
       </div>
       <div className=" mt-2 object-fill hover:scale-105 transform origin-center transition-all">
         <button className="border-slate-300 text-xl items-center hover:bg-custom-secondary-blue-dark text-slate-300 animate-fade-left border rounded-full p-2 px-4 font-sometype flex transition-all">
