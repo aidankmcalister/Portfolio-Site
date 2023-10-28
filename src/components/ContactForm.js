@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
-const containerClasses = "flex flex-col w-full my-2";
+const containerClasses =
+  "flex flex-col w-full my-2 rounded-md shadow-sm shadow-custom-light-blue-shadow bg-main-secondary-blue py-2 px-2";
 const labelClasses = "text-xl my-0.5 ";
 const inputClasses =
   "font-rubik px-1.5 py-1 rounded-lg bg-slate-300 text-slate-700 opacity-70";
 
 const ContactForm = ({ hideForm }) => {
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const formRef = useRef(); // Create a reference to the form
+
+  const sendEmail = (values, { resetForm }) => {
+    const emailData = {
+      name: values.name,
+      email: values.email,
+      subject: values.subject,
+      message: values.message,
+    };
+
+    console.log("emailData:", emailData);
 
     emailjs
       .sendForm(
         "service_lkwszas",
         "template_nsbq55p",
-        e.target,
+        formRef.current, // Use the form reference
         "lg5r1VrtCY90xQyvR"
       )
       .then(
         (result) => {
           console.log(result.text);
-
           hideForm();
+          resetForm(); // Reset the form after successful submission
         },
         (error) => {
           console.log(error.text);
@@ -29,59 +41,189 @@ const ContactForm = ({ hideForm }) => {
       );
   };
 
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string()
+      .email("Invalid email address")
+      .required("Email is required"),
+    subject: Yup.string().required("Subject is required"),
+    message: Yup.string().required("Message is required"),
+  });
+
   return (
-    <form onSubmit={sendEmail}>
-      <div className={`${containerClasses} border-blue-500`}>
-        <label className={`${labelClasses}`} htmlFor="name">
-          NAME
-        </label>
-        <input
-          className={`${inputClasses}`}
-          type="text"
-          id="name"
-          name="name"
-        />
-      </div>
-      <div className={`${containerClasses} border-blue-500`}>
-        <label className={`${labelClasses}`} htmlFor="email">
-          EMAIL
-        </label>
-        <input
-          className={`${inputClasses}`}
-          type="text"
-          id="email"
-          name="email"
-        />
-      </div>
-      <div className={`${containerClasses} border-purple-500`}>
-        <label className={`${labelClasses}`} htmlFor="subject">
-          SUBJECT
-        </label>
-        <input
-          className={`${inputClasses}`}
-          type="text"
-          id="subject"
-          name="subject"
-        />
-      </div>
-      <div className={`${containerClasses} border-yellow-500`}>
-        <label className={`${labelClasses}`} htmlFor="message">
-          MESSAGE
-        </label>
-        <input
-          className={`${inputClasses} h-28`}
-          type="text"
-          id="message"
-          name="message"
-        />
-      </div>
-      <input
-        type="submit"
-        value={"Submit"}
-        className="border-2 border-slate-300 px-2 py-1 rounded-full"
-      />
-    </form>
+    <Formik
+      initialValues={{
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      }}
+      validationSchema={validationSchema}
+      onSubmit={sendEmail}>
+      {() => (
+        <Form ref={formRef}>
+          <div className={`${containerClasses}`}>
+            <label className={`${labelClasses}`} htmlFor="name">
+              NAME
+            </label>
+            <Field
+              type="text"
+              id="name"
+              name="name"
+              className={`${inputClasses}`}
+            />
+            <ErrorMessage
+              name="name"
+              component="div"
+              className="text-red-500"
+            />
+          </div>
+          <div className={`${containerClasses}`}>
+            <label className={`${labelClasses}`} htmlFor="email">
+              EMAIL
+            </label>
+            <Field
+              type="text"
+              id="email"
+              name="email"
+              className={`${inputClasses}`}
+            />
+            <ErrorMessage
+              name="email"
+              component="div"
+              className="text-red-500"
+            />
+          </div>
+          <div className={`${containerClasses}`}>
+            <label className={`${labelClasses}`} htmlFor="subject">
+              SUBJECT
+            </label>
+            <Field
+              type="text"
+              id="subject"
+              name="subject"
+              className={`${inputClasses}`}
+            />
+            <ErrorMessage
+              name="subject"
+              component="div"
+              className="text-red-500"
+            />
+          </div>
+          <div className={`${containerClasses}`}>
+            <label className={`${labelClasses}`} htmlFor="message">
+              MESSAGE
+            </label>
+            <Field
+              type="text"
+              id="message"
+              name="message"
+              className={`${inputClasses} h-28`}
+              as="textarea"
+            />
+            <ErrorMessage
+              name="message"
+              component="div"
+              className="text-red-500"
+            />
+          </div>
+          <button
+            type="submit"
+            className="border-2 border-slate-300 px-2 py-1 rounded-full">
+            Submit
+          </button>
+        </Form>
+      )}
+    </Formik>
   );
 };
 
 export default ContactForm;
+
+// import React from "react";
+// import emailjs from "@emailjs/browser";
+
+// const containerClasses = "flex flex-col w-full my-2";
+// const labelClasses = "text-xl my-0.5 ";
+// const inputClasses =
+//   "font-rubik px-1.5 py-1 rounded-lg bg-slate-300 text-slate-700 opacity-70";
+
+// const ContactForm = ({ hideForm }) => {
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs
+//       .sendForm(
+//         "service_lkwszas",
+//         "template_nsbq55p",
+//         e.target,
+//         "lg5r1VrtCY90xQyvR"
+//       )
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+
+//           hideForm();
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//   };
+
+//   return (
+//     <form onSubmit={sendEmail}>
+//       <div className={`${containerClasses}`}>
+//         <label className={`${labelClasses}`} htmlFor="name">
+//           NAME
+//         </label>
+//         <input
+//           className={`${inputClasses}`}
+//           type="text"
+//           id="name"
+//           name="name"
+//         />
+//       </div>
+//       <div className={`${containerClasses}`}>
+//         <label className={`${labelClasses}`} htmlFor="email">
+//           EMAIL
+//         </label>
+//         <input
+//           className={`${inputClasses}`}
+//           type="text"
+//           id="email"
+//           name="email"
+//         />
+//       </div>
+//       <div className={`${containerClasses}`}>
+//         <label className={`${labelClasses}`} htmlFor="subject">
+//           SUBJECT
+//         </label>
+//         <input
+//           className={`${inputClasses}`}
+//           type="text"
+//           id="subject"
+//           name="subject"
+//         />
+//       </div>
+//       <div className={`${containerClasses}`}>
+//         <label className={`${labelClasses}`} htmlFor="message">
+//           MESSAGE
+//         </label>
+//         <input
+//           className={`${inputClasses} h-28`}
+//           type="text"
+//           id="message"
+//           name="message"
+//         />
+//       </div>
+//       <input
+//         type="submit"
+//         value={"Submit"}
+//         className="border-2 border-slate-300 px-2 py-1 rounded-full"
+//       />
+//     </form>
+//   );
+// };
+
+// export default ContactForm;

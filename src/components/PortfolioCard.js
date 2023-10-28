@@ -37,8 +37,7 @@ const PortfolioCard = () => {
         {renderedProjects.map((project) => (
           <li
             key={project.id}
-            className="flex-col animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow"
-            style={{ backgroundColor: "#334155" }}>
+            className="flex-col animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow bg-main-secondary-blue">
             {project.img && (
               <img
                 src={project.img}
