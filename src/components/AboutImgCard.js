@@ -7,8 +7,8 @@ const AboutImgCard = () => {
       <img
         src={tulsaMap}
         alt="Tulsa Map"
-        className="rounded-lg border border-slate-500"
-        style={{ boxShadow: "0px 0px .25rem" }}
+        className="border-slate-500 border-2 rounded-md"
+        style={{ boxShadow: "0px 0px .5rem" }}
       />
     </div>
   );

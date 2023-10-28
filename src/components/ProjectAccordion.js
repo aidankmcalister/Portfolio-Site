@@ -68,11 +68,11 @@ const ProjectAccordion = ({ project }) => {
           {project.description}
           <br />
           <div className="inline-block p-1 mt-2 mb-1">
-            <Link
-              to={`project/${projectId}`}
+            <a
+              href={project.link}
               className="border-slate-300 hover:scale-105 text-lg items-center hover:bg-custom-secondary-blue-dark text-slate-300 border rounded-full p-1 px-2 font-sometype flex transition-all">
-              Learn More
-            </Link>
+              REPOSITORY
+            </a>
           </div>
         </div>
       </AccordionBody>

@@ -86,3 +86,16 @@
   color: transparent;
   filter: drop-shadow(0 0 0.5rem crimson);
 }
+
+.rainbow-gradient-border {
+  border: 2px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgba(251, 146, 60, 1) 0%,
+    rgba(239, 68, 68, 1) 50%,
+    rgba(244, 114, 182, 1) 100%
+  );
+
+  border-image-slice: 1;
+  border-radius: 0.5rem;
+}
