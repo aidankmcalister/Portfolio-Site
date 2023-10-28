@@ -19,15 +19,17 @@ const TechnologiesCard = () => {
   }, [currentIndex]);
 
   return (
-    <div className="md:h-52 h-80 my-10 m-4 bg-opacity-70 bg-slate-800 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg font-rubik">
+    <div
+      className="md:h-52 my-10 m-4 bg-opacity-70 bg-slate-800 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg font-rubik"
+      style={{ height: "17rem" }}>
       <h1 className="text-2xl">Skills</h1>
       <hr className="w-full my-2 text-lg mt-1" />
-      <ul className="grid md:grid-cols-2 md:gap-3 gap-1.5 grid-cols-1">
+      <ul className="grid grid-cols-2 md:gap-4 gap-4">
         {renderedTechnologies.map((technology) => (
           <li
             key={technology.id}
-            className={` animate-fade-left p-1.5 flex rounded-md font-sometype shadow-sm shadow-custom-light-blue-shadow`}
-            style={{ backgroundColor: "#334155" }}>
+            className={`${technology.classes} border bg-opacity-75 animate-fade-left p-1.5 flex rounded-md font-sometype`}
+            style={{ boxShadow: "0px 0px .5rem" }}>
             <img
               src={technology.img}
               alt={technology.name}

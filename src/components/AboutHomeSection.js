@@ -22,7 +22,7 @@ const AboutHomeSection = () => {
   const isSmallScreen = window.innerWidth < 640;
 
   return (
-    <div className="md:ml-28 md:-mt-10 mx-4 mt-14 h-96 md:h-screen flex flex-col justify-center items-start">
+    <div className="md:ml-28 md:-mt-10 mx-4 my-20 h-96 md:h-screen flex flex-col justify-center items-start">
       <h1 className="text-5xl text-slate-300 animate-fade-left my-1 font-rubik">
         <span>AIDAN</span>
         <br />
