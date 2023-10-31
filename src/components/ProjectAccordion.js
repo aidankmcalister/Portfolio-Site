@@ -5,7 +5,6 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import { tag } from "./portfolioPage/tags";
-import { Link } from "react-router-dom";
 
 function Icon({ isOpen }) {
   return (
@@ -28,7 +27,7 @@ function Icon({ isOpen }) {
 }
 
 const ProjectAccordion = ({ project }) => {
-  const projectId = project.id;
+  // const projectId = project.id;
   const [open, setOpen] = useState(false);
   const [contentVisible, setContentVisible] = useState(false);
 
