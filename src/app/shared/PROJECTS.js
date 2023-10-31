@@ -1,6 +1,7 @@
 import portfolioProjectImg from "../assets/imgs/portfolioProjectImg.png";
 import JSONFormatterImg from "../assets/imgs/JSONFormatterImg.png";
 import moneyTrackerImg from "../assets/imgs/money-tracker.png";
+import ageCalculatorImg from "../assets/imgs/age-calculator.png";
 
 export const PROJECTS = [
   {
@@ -12,62 +13,7 @@ export const PROJECTS = [
     sitelink: "https://json-formatter-akm.netlify.app",
     description:
       'Turns text from name:value into {"name":"value"}. Includes a clear and a copy button.',
-    readme: `
-    <div class="project-readme">
-        <h1>Overview:</h1>
-        <p>JSON Syntax Formatter is a simple web-based tool that takes input in the form of name-value pairs and formats it into valid JSON syntax.</p>
-
-        <h2>Usage:</h2>
-        <ol>
-            <li>Open the provided HTML file in your web browser.</li>
-            <li>In the <strong>Input JSON Data</strong> textbox, enter your data in the following format:</li>
-            <p>
-                name1:value1<br>
-                name2:value2
-            </p>
-            <p><strong>OR</strong></p>
-            <p>
-                name1|value1<br>
-                name2|value2
-            </p>
-            <li>Click the <strong>Format</strong> button.</li>
-            <li>The tool will format the data into JSON syntax, and the result will be displayed in the <strong>Formatted JSON Output</strong> textbox.</li>
-            <pre>
-                JSON
-                  {
-                      "name1": "value1",
-                      "name2": "value2"
-                  }
-
-            </pre>
-            <li>To copy the formatted JSON to your clipboard, click the <strong>Copy to Clipboard</strong> button.</li>
-        </ol>
-
-        <h2>Example:</h2>
-        <h3>Input JSON Data:</h3>
-        <p>
-            first_name:John<br>
-            last_name:Doe<br>
-            age:30
-        </p>
-        <h3>Formatted JSON Output:</h3>
-        <pre>
-            JSON
-            {
-                "first_name": "John",
-                "last_name": "Doe",
-                "age": 30
-            }
-        </pre>
-
-        <h2>Technologies Used:</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-    `,
+    readme: "",
   },
   {
     id: 1,
@@ -81,7 +27,18 @@ export const PROJECTS = [
     readme: "",
   },
   {
-    id: 1,
+    id: 2,
+    img: ageCalculatorImg,
+    lang: ["js", "tailwind", "react"],
+    name: "Age Calculator",
+    repolink: "https://github.com/aidankmcalister/age-calculator",
+    sitelink: "https://age-calculator-akm.netlify.app",
+    description:
+      "Age calculator that displays the time since the date you inputted in years, months, and days",
+    readme: "",
+  },
+  {
+    id: 3,
     img: moneyTrackerImg,
     lang: ["js", "tailwind", "react", "nodejs", "mongodb"],
     name: "Money Tracker",

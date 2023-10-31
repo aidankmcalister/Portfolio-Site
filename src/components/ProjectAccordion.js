@@ -17,11 +17,15 @@ const ProjectAccordion = ({ project }) => {
         <div className="flex pt-2">
           <a
             href={project.repolink}
+            target="_blank"
+            rel="noreferrer"
             className="flex flex-col items-center w-1/2 mx-1 border-slate-300 hover:scale-105 text-lg hover:bg-custom-secondary-blue-dark text-slate-300 border rounded-full p-1 px-2 font-sometype transition-all">
             REPOSITORY
           </a>
           <a
             href={project.sitelink}
+            target="_blank"
+            rel="noreferrer"
             className={
               `flex-col items-center w-1/2 mx-1 border-slate-300 hover:scale-105 text-lg hover:bg-custom-secondary-blue-dark text-slate-300 border rounded-full p-1 px-2 font-sometype transition-all ` +
               (!project.sitelink ? "hidden" : "flex")
