@@ -36,6 +36,20 @@ const ReactTag = () => (
     REACT JS
   </div>
 );
+const NodeJSTag = () => (
+  <div
+    style={tagStyle}
+    className={`bg-green-900 border-green-400 text-green-400 ${tagClasses}`}>
+    NODE JS
+  </div>
+);
+const MongoDBTag = () => (
+  <div
+    style={tagStyle}
+    className={`bg-emerald-900 border-emerald-400 text-emerald-400 ${tagClasses}`}>
+    MONGO DB
+  </div>
+);
 
 export const tag = (lang) => {
   return lang.map((langs) => {
@@ -50,6 +64,10 @@ export const tag = (lang) => {
         return <PythonTag key={langs} />;
       case "react":
         return <ReactTag key={langs} />;
+      case "nodejs":
+        return <NodeJSTag key={langs} />;
+      case "mongodb":
+        return <MongoDBTag key={langs} />;
       default:
         return null;
     }

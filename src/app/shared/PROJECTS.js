@@ -1,5 +1,6 @@
 import portfolioProjectImg from "../assets/imgs/portfolioProjectImg.png";
 import JSONFormatterImg from "../assets/imgs/JSONFormatterImg.png";
+import moneyTrackerImg from "../assets/imgs/money-tracker.png";
 
 export const PROJECTS = [
   {
@@ -7,7 +8,8 @@ export const PROJECTS = [
     img: JSONFormatterImg,
     lang: ["js", "bootstrap"],
     name: "JSON Formatter",
-    link: "https://github.com/aidankmcalister/JSON-Formatter",
+    repolink: "https://github.com/aidankmcalister/JSON-Formatter",
+    sitelink: "https://json-formatter-akm.netlify.app",
     description:
       'Turns text from name:value into {"name":"value"}. Includes a clear and a copy button.',
     readme: `
@@ -72,9 +74,20 @@ export const PROJECTS = [
     img: portfolioProjectImg,
     lang: ["js", "tailwind", "react"],
     name: "Portfolio Site",
-    link: "https://github.com/aidankmcalister/Portfolio-Site",
+    repolink: "https://github.com/aidankmcalister/Portfolio-Site",
+    sitelink: "https://aidanmcalister.netlify.app/",
     description:
       "This is the project for this site. I've used multiple packages like tsparticles, react-scroll, tailwindcss-animations, and more.",
+    readme: "",
+  },
+  {
+    id: 1,
+    img: moneyTrackerImg,
+    lang: ["js", "tailwind", "react", "nodejs", "mongodb"],
+    name: "Money Tracker",
+    repolink: "https://github.com/aidankmcalister/money-tracker",
+    description:
+      "A full-stack web application that helps you manage your finances. It consists of a backend API powered by MongoDB to store financial data in the /api directory and a front-end interface in the root folder built using React to visualize and interact with the data.",
     readme: "",
   },
 ];
