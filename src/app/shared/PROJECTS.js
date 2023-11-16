@@ -1,18 +1,19 @@
 import portfolioProjectImg from "../assets/imgs/portfolioProjectImg.png";
-import JSONFormatterImg from "../assets/imgs/JSONFormatterImg.png";
+// import JSONFormatterImg from "../assets/imgs/JSONFormatterImg.png";
 import moneyTrackerImg from "../assets/imgs/money-tracker.png";
 import ageCalculatorImg from "../assets/imgs/age-calculator.png";
+import coffeeImg from "../assets/imgs/coffee.png";
+import netflixImg from "../assets/imgs/netflix.png";
 
 export const PROJECTS = [
   {
     id: 0,
-    img: JSONFormatterImg,
-    lang: ["js", "bootstrap"],
-    name: "JSON Formatter",
-    repolink: "https://github.com/aidankmcalister/JSON-Formatter",
-    sitelink: "https://json-formatter-akm.netlify.app",
-    description:
-      'Turns text from name:value into {"name":"value"}. Includes a clear and a copy button.',
+    img: netflixImg,
+    lang: ["js", "react", "tailwind"],
+    name: "Netflix Clone",
+    repolink: "https://github.com/aidankmcalister/netflix-clone",
+    sitelink: "https://netflix-aidanmcalister.netlify.app",
+    description: "Netflix clone using TMDB",
     readme: "",
   },
   {
@@ -28,6 +29,16 @@ export const PROJECTS = [
   },
   {
     id: 2,
+    img: coffeeImg,
+    lang: ["js", "react", "tailwind"],
+    name: "Coffee Shop",
+    repolink: "https://github.com/aidankmcalister/coffee-shop-site",
+    sitelink: "https://coffee-shop-aidanmcalister.netlify.app/",
+    description: "Site for a coffee shop based in New York that isn't real",
+    readme: "",
+  },
+  {
+    id: 3,
     img: ageCalculatorImg,
     lang: ["js", "tailwind", "react"],
     name: "Age Calculator",
@@ -38,7 +49,7 @@ export const PROJECTS = [
     readme: "",
   },
   {
-    id: 3,
+    id: 4,
     img: moneyTrackerImg,
     lang: ["js", "tailwind", "react", "nodejs", "mongodb"],
     name: "Money Tracker",
