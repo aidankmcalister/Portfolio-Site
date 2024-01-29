@@ -45,7 +45,7 @@ const Landing = () => {
       <div
         id="about"
         className="md:w-screen md:flex md:flex-col md:items-center">
-        <div className=" md:w-3/4 md:grid md:grid-cols-2 shadow-md bg-slate-800 bg-opacity-70 rounded-lg animate-fade-left">
+        <div className=" md:w-3/4 md:grid md:grid-cols-2 shadow-md bg-slate-800 bg-opacity-70 rounded-lg animate-fade-left mx-4">
           <div className="md:h-full md:flex md:items-center md:justify-center">
             <AboutMeCard />
           </div>
