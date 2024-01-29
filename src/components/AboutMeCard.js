@@ -1,6 +1,6 @@
 const AboutMeCard = () => {
   return (
-    <div className="md:w-full my-10 m-4 bg-opacity-70 bg-slate-800 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg font-rubik">
+    <div className="md:w-full bg-opacity-70 animate-fade-left rounded-lg p-3 flex flex-col text-slate-300 max-w-lg font-rubik">
       <h1 className="text-2xl">
         <span className="text-lg text-slate-400">I'M</span> AIDAN MCALISTER
       </h1>

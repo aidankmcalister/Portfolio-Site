@@ -8,6 +8,13 @@ const JsTag = () => (
     JAVASCRIPT
   </div>
 );
+const TsTag = () => (
+  <div
+    style={tagStyle}
+    className={`bg-blue-800 border-blue-500 text-blue-500 ${tagClasses}`}>
+    TYPESCRIPT
+  </div>
+);
 const BootstrapTag = () => (
   <div
     style={tagStyle}
@@ -56,6 +63,8 @@ export const tag = (lang) => {
     switch (langs) {
       case "js":
         return <JsTag key={langs} />;
+      case "ts":
+        return <TsTag key={langs} />;
       case "bootstrap":
         return <BootstrapTag key={langs} />;
       case "tailwind":
