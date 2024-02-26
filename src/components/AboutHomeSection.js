@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import resumePDF from "../app/assets/Aidan_McAlister_Resume.pdf";
+import resumePDF from "../app/assets/CV_EDIT_AMcAlister_edited.pdf";
 
 const subtextClasses = "mr-2 hover:text-white transition-all font-sometype";
 
