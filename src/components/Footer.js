@@ -13,7 +13,7 @@ const Footer = () => {
           <img src={githubLogo} alt="GitHub logo" width="40" />
         </a>
         <a
-          href="https://www.linkedin.com/in/aidan-mcalister-28374b235/"
+          href="https://www.linkedin.com/in/aidan-mcalister-2454102a0"
           target="_new"
           className="cursor-pointer mx-2">
           <img src={linkedIn} alt="LinkedIn logo" width="40" />
